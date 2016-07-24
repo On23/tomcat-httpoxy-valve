@@ -4,12 +4,13 @@
 
 2. Add the line `<Valve className="ru.on23.tomcat.valve.httproxy.PoxyValve" />` in conf/server.xml (like after the AccessLogValve)
 
-3. restart Tomcat.
+3. restart Tomcat
 
-4. Test it (should print OK if patch works) change port in url to actual value:
+4. test it (should print OK if patch works properly):
 
-```
-    curl -qv 'http://localhost:8080/'  -H 'Proxy: any-proxy-server' 2>&1 | grep -q 'HTTP/1.1 400' && echo OK
+```sh
+#change 8080 in url to actual value
+curl -qv 'http://localhost:8080/'  -H 'Proxy: any-proxy-server' 2>&1 | grep -q 'HTTP/1.1 400' && echo OK
 
 ```
 
