@@ -1,0 +1,9 @@
+target
+hs_err*
+.idea
+*~
+*.#*
+release.properties
+pom.xml.*
+*.war
+tomcat7
