@@ -1,8 +1,12 @@
 # Tomcat Httpoxy Vulnerability Patch
 
+**Compatible with Tomcat 6, 7 and 8**
+
+####Installation:
+
 1. Put [httproxy-valve-t6.jar](https://github.com/On23/tomcat-httpoxy-valve/releases/download/1.0/httproxy-valve-t6.jar) into /lib of your Tomcat installation
 
-2. Add the line `<Valve className="ru.on23.tomcat.valve.httproxy.PoxyValve" />` in conf/server.xml (like after the AccessLogValve)
+2. add the line `<Valve className="ru.on23.tomcat.valve.httproxy.PoxyValve" />` in conf/server.xml (like after the AccessLogValve)
 
 3. restart Tomcat
 
