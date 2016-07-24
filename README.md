@@ -14,7 +14,7 @@
 ```
 
 
-## Tomcat Httpoxy Vulnerability
+## Tomcat Httpoxy Vulnerability ([Source](https://www.apache.org/security/asf-httpoxy-response.txt))
 
 
 Apache Tomcat provides a CGI Servlet that allows to execute a CGI
